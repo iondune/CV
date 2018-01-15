@@ -1,0 +1,157 @@
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2009 Jason Blevins <jrblevin@sdf.lonestar.org>
+% http://jblevins.org/projects/cv-template/
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+
+\documentclass[letterpaper]{article}
+
+\usepackage{hyperref}
+\usepackage{geometry}
+
+% Comment the following lines to use the default Computer Modern font
+% instead of the Palatino font provided by the mathpazo package.
+% Remove the 'osf' bit if you don't like the old style figures.
+\usepackage[T1]{fontenc}
+\usepackage[sc,osf]{mathpazo}
+
+% Set your name here
+\def\name{Ian Dunn}
+
+% Replace this with a link to your CV if you like, or set it empty
+% (as in \def\footerlink{}) to remove the link in the footer:
+\def\footerlink{http://jblevins.org/projects/cv-template/}
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {economics, statistics, mathematics},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+
+\geometry{
+  body={6.5in, 8.5in},
+  left=1.0in,
+  top=1.25in
+}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\mdseries\itshape\large}
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1.5em}
+  }
+}{
+  \end{list}
+}
+
+\begin{document}
+
+% Place name at left
+{\huge \name}
+
+% Alternatively, print name centered and bold:
+%\centerline{\huge \bf \name}
+
+\vspace{0.25in}
+
+\begin{minipage}{0.45\linewidth}
+  \href{http://www.calpoly.edu/}{California Polytechnic State University} \\
+  Computer Science Department \\
+  San Luis Obispo, CA 93407
+\end{minipage}
+\begin{minipage}{0.45\linewidth}
+  \begin{tabular}{ll}
+    Fax: &  (919) 962-5678 \\
+    Email: & \href{mailto:idunn01@calpoly.edu}{\tt idunn01@calpoly.edu} \\
+    Homepage: & \href{http://www.iandunn.me/}{\tt http://www.iandunn.me/} \\
+  \end{tabular}
+\end{minipage}
+
+
+\section*{Personal}
+
+\begin{itemize}
+\item Born on December 20, 1991.
+\item United States Citizen.
+\end{itemize}
+
+
+\section*{Education}
+
+\begin{itemize}
+  \item B.S. Software Engineering, California Polytechnic State University, 2016.
+  \item M.S. Computer Science, California Polytechnic State Univeristy, 2016.
+\end{itemize}
+
+
+\section*{Employment}
+
+\begin{itemize}
+\item {\bf Lecturer}, {\it California Polytechnic State University}. January 2017 - Present. \\
+  Instructed courses {\it Game Design}, {\it Systems Programming}, {\it Introduction to Computer Graphics}, {\it Advanced Rendering Techniques}, and {\it Real-Time 3D Computer Graphics Software}.
+
+\item {\bf Software Engineer Intern}, {\it Microsoft}. June - December 2015. \\
+  Direct3D 12 team. Created MultiGPU Affinity Layer for Direct3D 12, tool for game engine developers. Presented project results to GAB.
+
+\item {\bf Game Software Engineer Intern}, {\it Intel}. January - May 2015. \\
+  Generated C++ source from IntelGPA frame captures. Added Intel hardware metrics to open-source Renderdoc project.
+
+\item {\bf SDET Intern}, {\it Microsoft}. Summer 2014. \\
+  Software development, analysis, and research related to social media data and customer sentiment analysis.
+
+\item {\bf Teaching Associate}, {\it California Polytechnic State University}. Fall 2014. \\
+  Instructed course {\it System Programming}, managed TA staff. Inverted instruction model.
+
+\item {\bf Research Assistant}, {\it California Polytechnic State University}. Summer 2012, 2013. \\
+  Research assistant for Dr. Zoe Wood, graphics professor.
+  Worked on volumetric data visualization and surface reconstruction projects.
+
+\end{itemize}
+
+
+\section*{Publications}
+
+\begin{itemize}
+\item Surface Reconstruction of Ancient Water Storage Systems, {\it GRAPP 2014}.
+\item Towards Three-Dimensional Underwater Mapping Without Odometry, {\it UUST 2013}.
+\end{itemize}
+
+\bigskip
+
+% Footer
+\begin{center}
+  \begin{footnotesize}
+    Last updated: \today \\
+  \end{footnotesize}
+\end{center}
+
+\end{document}
